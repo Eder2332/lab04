@@ -11,7 +11,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.graphics.Color // Importación necesaria
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.lab04.ui.theme.Lab04Theme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +45,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun Greeting_1(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Greeting_1 $name!",
-        modifier = modifier
+        modifier = modifier.padding(12.dp),
+        color = Color.Green,
+        fontSize = 22.sp
     )
 }
 
